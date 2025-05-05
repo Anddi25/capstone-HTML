@@ -1,0 +1,65 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding-top: 110px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.header-desktop {
+    display: none;
+}
+
+.social {
+    background-color: gray;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+    padding-right: 1%; 
+    margin-bottom: 3px; 
+    margin-top: 3px;
+}
+
+.main {
+    background-image: url(img/cosmetic-backgrown.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #EC5242;
+    padding-left: 35%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.main h1 {
+    font-size: 400%;
+    font-weight: bold;
+}
+.main p {
+    color: gray;
+}
+
+.location {
+    color: gray;
+}
+
+@media screen and (min-width: 768px) {
+    .header-mobile {
+      display: none;
+    }
+
+    .header-desktop {
+      display: flex;
+      width: 100%;
+    }
+}
