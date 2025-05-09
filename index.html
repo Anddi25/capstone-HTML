@@ -10,7 +10,38 @@
     <title>Conference Page</title>
 </head>
 <body>
+    <nav class="header-mobile navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/Logo.jpg" alt="Logo" height="40">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile"
+            aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMobile">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Program</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Join</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sponsor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
     <header class="header-desktop d-none d-md-flex" style="display: flex; flex-direction: column;">
+        <div class=""></div>
         <div class="social">
             <a href=""><img src="img/linkedin.png" alt="linkedin"></a>
             <a href=""><img src="img/twitter.png" alt="twitter"></a>
@@ -22,8 +53,8 @@
             <img class="w-20" src="img/Logo.jpg" style="height: 80px;" alt="Logo">
             <ul class="nav w-60" style="justify-content: center;">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
-                </li>
+                  <a class="nav-link" href="#About">About</a>
+              </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Program</a>
                 </li>
@@ -37,9 +68,9 @@
                     <a class="nav-link" href="#">News</a>
                 </li>
             </ul>
-                <div class="w-20 d-flex justify-content-center align-items-center">
-                    <button type="button" class="btn btn-light">Light</button>
-                </div>
+            <div class="w-20 d-flex justify-content-center align-items-center">
+              <button type="button" class="btn btn-light border border-danger border-2">Contact</button>
+            </div>
             </div>
     </header>
     <div class="main">
@@ -47,7 +78,7 @@
             <h2>"Hello! And welcome!"</h2>
             <h1>WE ARE HERE TO SEE</h1>
             <br>
-            <h1>THE TENDENCIES IN</h1>
+            <h1>THE TRENDS IN</h1>
             <br>
             <h1>THE COSMETIC WORLD</h1>
         </div>
@@ -59,5 +90,62 @@
             <h3>@ National Museum of Korea, Art Center Nabi and More</h3>
         </div>
     </div>
+    <div id="About" class="about container-fluid justify-content-between">
+      <div class="container-fluid d-flex justify-content-center flex-wrap">
+        <div class="card mb-3" style="margin-right: 5%; max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/liliana.jpeg" class="img-fluid rounded-start" alt="speaker-1">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="img/INVIMA.jpeg" class="img-fluid" alt="INVIMA">
+      </div>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/liliana.jpeg" class="img-fluid rounded-start" alt="speaker-1">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid contact" id="Contact">
+      <label for="formFile" class="form-label">Suscribe for more information</label>
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
+            <label for="floatingInputGrid">Email address</label>
+          </div>
+        </div>
+        <div class="col-md align-items-center">
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+              <option selected="1">Student</option>
+              <option value="2">Business class</option>
+              <option value="3">Full pass</option>
+            </select>
+            <label for="floatingSelectGrid">Select a plan for more info</label>
+            <input class="submit-bottom btn btn-primary btn-lg" type="submit" name="submit" value="Get in touch">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
