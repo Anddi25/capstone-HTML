@@ -2,20 +2,20 @@ const speakers = [
 {
     name: "Liliana Ruiz",
     image: "img/speaker1.jpg",
-    event: "INVIMA: Todo lo que necesitas saber sobre el ente regulador.",
-    description: "Especialista en microbiología clínica con más de 10 años de experiencia.",
+    event: "INVIMA: Everything you need to know about the cosmetics regulator.",
+    description: "Clinical microbiology specialist with more than 10 years of experience.",
 },
 {
     name: "Carlos Gómez",
     image: "img/speaker2.jpg",
-    event: "Cosmética verde: la nueva tendencia para el cuidado de la piel.",
-    description: "Investigador en biotecnología ambiental y ponente internacional.",
+    event: "Green cosmetics: the new trend in skin care.",
+    description: "Researcher in environmental biotechnology and international speaker.",
 },
 {
     name: "Ana Torres",
     image: "img/speaker3.jpg",
-    event: "Importancia de los estudios de estabilidad en el desarrollo de nuevos productos cosméticos.",
-    description: "Doctora en química analítica enfocada en procesos microbiológicos.",
+    event: "Importance of stability studies in the development of new cosmetic products.",
+    description: "PhD in analytical chemistry focused on microbiological processes.",
 }
 ];
 
