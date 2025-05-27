@@ -15,6 +15,18 @@ header {
     display: none;
 }
 
+.desktop-items {
+    background-color: #e3f2fd
+}
+
+.img-logo {
+    height: 80px
+}
+
+.ul-items {
+    justify-content: center
+}
+
 .social {
     background-color: gray;
     padding: 0;
@@ -69,6 +81,10 @@ header {
     padding: 10%;
 }
 
+.pr-25 {
+    padding-right: 25%;
+}
+
 .about p {
     color: gray;
 }
@@ -96,6 +112,7 @@ header {
 
     .header-desktop {
         display: flex;
+        flex-direction: column;
         width: 100%;
         z-index: 9999;
     }
