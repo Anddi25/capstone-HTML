@@ -23,21 +23,21 @@ const container = document.getElementById('cards-container');
 
 speakers.forEach((speaker) => {
   container.innerHTML += `
-        <div class="col-12 col-md-6 d-flex justify-content-center">
-        <div class="card mb-3" style="max-width: 540px; width: 100%;">
-            <div class="row g-0">
-            <div class="col-md-4 d-flex align-items-center">
-                <img src="${speaker.image}" class="img-fluid rounded-start" alt="${speaker.name}">
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+      <div class="card mb-3" style="max-width: 540px; width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="${speaker.image}" class="img-fluid rounded-start" alt="${speaker.name}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">${speaker.name}</h5>
+              <p class="card-text">${speaker.event}</p>
+              <p class="card-text"><small class="text-muted">${speaker.description}</small></p>
             </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h5 class="card-title">${speaker.name}</h5>
-                <p class="card-text">${speaker.event}</p>
-                <p class="card-text"><small class="text-muted">${speaker.description}</small></p>
-                </div>
-            </div>
-            </div>
+          </div>
         </div>
-        </div>
-    `;
+      </div>
+    </div>
+  `;
 });
